@@ -37,7 +37,7 @@
         </rule>
         
         <rule context="ubl:ExpressionOfInterestRequest/cbc:CustomizationID">
-            <assert id="eSENS-T81-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm081:ver3.0'">[eSENS-T81-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm081:ver3.0'</assert>
+            <assert id="eSENS-T81-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0'">[eSENS-T81-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0'</assert>
             <report id="eSENS-T81-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T81-S303] CustomizationID SHOULD NOT contain any attributes.</report>
         </rule>
 
